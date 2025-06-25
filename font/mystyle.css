@@ -1,0 +1,21 @@
+.container{
+    display : grid;
+    grid-template-rows : 1fr 1fr 1fr 1fr;
+    grid-template-columns : 1fr 2fr 1fr 2fr 2fr; 
+}
+
+.logo {
+    width: 220;
+}
+
+#menu-bar{
+    grid-area : 1 / 5 / 1 / 1;
+}
+
+.left{
+    grid-area : 1 / 3 / 2 / 3;
+}
+
+.right {
+    grid-area : 3 / 5 / 2 / 3 ;
+}

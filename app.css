@@ -1,0 +1,332 @@
+/* FONT POPPINS  */
+
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsbold;
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppinssemibold;
+    src: url(font/Poppins-SemiBold.ttf);
+}
+
+/* HAMBURGER */
+
+/* Hamburger styles */
+
+.hamburger {
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* MENU BAR */
+
+
+.logo {
+    max-width: 220px;
+    padding: 30px 0px;
+}
+
+.bg-color {
+    background-color: #fff4e6;
+    /* width : 100vw; */
+}
+
+#menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 50%;
+    background-color: white;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu-item {
+    font-family: poppins;
+    font-size: 16;
+    padding: 30px 10px;
+}
+
+.menu-item:hover {
+    color: #fe8801;
+}
+
+/* INTRO */
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.right img {
+    width: 100%;
+}
+
+.left h1 {
+    font-family: poppinsbold;
+    font-size: 86.41px;
+    letter-spacing: -3;
+    line-height: 92.2%;
+}
+
+.left p {
+    font-family: poppins;
+    font-size: 16;
+    margin-top: 20px;
+}
+
+.left button {
+    width: 224px;
+    height: 61px;
+    margin-top: 20px;
+    background-color: #42c2b2;
+    border: none;
+    border-radius: 10px;
+    color: #FAF9F6
+}
+
+.left {
+    max-width: 45%;
+
+}
+
+.right {
+    max-width: 45%;
+}
+
+/* SERVICES */
+
+#services {
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+}
+
+#services h2 {
+    font-family: poppinssemibold;
+    font-size: 30px;
+
+}
+
+#services p {
+    font-family: poppins;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.image-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #fff4e6;
+    text-align: center;
+    height: 391px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#social-media {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cr {
+    font-family: poppinssemibold;
+    font-size: 15px;
+}
+
+/* IMAGE OVERLAY WITH BLACK GRADIENT */
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    /* min-width: 15%; */
+    /* width: 310px;
+    height: 368px; */
+    color: white;
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black 5%, black 8%, rgba(255, 255, 255, 0) 30%);
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 20px;
+    font-family: poppins;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* MEDIA QUERY */
+
+/* MEDIUM SCREEN */
+
+@media only screen and (max-width : 922px) {
+
+    .logo{
+        max-width : 180px ;
+    }
+
+    .menu-item{
+        font-size : 14px;
+        padding : 0px 5px;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left h1{
+        font-size : 60px;
+    }
+
+    .left {
+        max-width: 100%;
+    }
+
+    .right {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    #services p {
+        max-width: 50%;
+    }
+
+    .image-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        min-width: 40%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+
+}
+
+/* SMALL SCREEN */
+
+@media only screen and (max-width : 576px) {
+
+    .logo{
+        max-width: 220px;
+    }
+
+    .menu-item{
+        font-size: 18px;
+        padding : 15px 10px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        text-align: center;
+        top: 6rem;
+        right: 0;
+        width: 50%;
+        box-shadow: 5px 10px 18px #888888;
+    }
+
+    .menu-toggle:checked .hamburger, .menu {
+        display: flex;
+    }
+
+
+    .image-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+
+
+}
